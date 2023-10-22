@@ -1,17 +1,318 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flip Book</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2>Flip Book</h2>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit iure ullam laudantium ratione aliquam, vel corporis! Eius suscipit sequi libero doloribus quos architecto sapiente iusto debitis impedit consequuntur, et quibusdam quaerat quam blanditiis? Cumque dolorum iste rem, neque, sint recusandae saepe quisquam unde officia ut doloremque eligendi laborum eaque.
-     <br>
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia perferendis dolores quibusdam reiciendis maiores veniam unde consectetur itaque ullam exercitationem.
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 class="heading">The Bear Story</h2>
+
+    <div class="demo-block bg-light pt-3 pb-3 overflow-hidden">
+      <div class="container mb-3 text-center" id="buttonDemoSelection">
+        <div class="btn-group" role="group" aria-label="">
+          <input class="find-box" type="text" placeholder="" />
+          <button type="button" class="btn btn-primary">Find</button>
+        </div>
+      </div>
+      <div class="container">
+        <div id="htmlBook">
+          <div
+            class="flip-book html-book stf__wrapper --landscape"
+            id="htmlBookExample"
+            style="
+              min-width: 350px;
+              min-height: 467px;
+              width: 100%;
+              max-width: 1400px;
+              display: block;
+              padding-bottom: 66.6364%;
+            "
+          >
+            <div class="stf__block">
+              <div class="page stf__item" style="display: none; z-index: 1">
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 1</h2>
+                  <div class="page-text left-page-text">
+                    Once, there lived a bear named Willo, with a short tail
+                    covered by puffy fur. One day, Willo was sitting all alone
+                    and not speaking to anyone. His friend, the bird Animo, came
+                    flying to him. “Why are you sad, Willo? You are not eating
+                    and sleeping properly. Tell me, what’s the problem?”
+                  </div>
+                  <div class="page-footer">1</div>
+                </div>
+              </div>
+              <div class="page stf__item" style="display: none; z-index: 1">
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 2</h2>
+                  <div
+                    class="page-image"
+                    style="background-image: url('./images/BWLD_09b.jpg')"
+                  ></div>
+
+                  <div class="page-footer">2</div>
+                </div>
+              </div>
+              <div class="page stf__item --left --simple" style="display: none">
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 3</h2>
+                  <div class="page-text left-page-text">
+                    The bear said slowly, “Animo, promise me that you will not
+                    make fun of me. Then, I shall tell you.” Animo replied, “
+                    Promise! I shall not tease you. Tell me, Willo.”
+                  </div>
+                  <div class="page-footer">3</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right --simple"
+                style="display: none"
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 4</h2>
+                  <div
+                    class="page-image"
+                    style="
+                      background-image: url(images/BWLD_09b.jpg);
+                    "
+                  ></div>
+                  <div class="page-footer">4</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 5</h2>
+                  <div class="page-text left-page-text">
+                    Willo replied faintly, “Er… I saw the peacock dancing
+                    beautifully. I loved it. I want to learn to dance.” Animo
+                    was surprised. But she said encouragingly, “Is that all?
+                    Come, we will look for a good dance teacher.”
+                  </div>
+                  <div class="page-footer">5</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 6</h2>
+                  <div
+                    class="page-image"
+                    style="
+                     background-image: url(images/BWLD_09b.jpg);
+                    "
+                  ></div>
+                  <div class="page-footer">6</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 7</h2>
+                  <div class="page-text left-page-text">
+                    Willo asked, “But I’m a big bear. The peacock will be
+                    scared. Who will teach me to dance?” Animo brushed it away
+                    in a friendly tone, “Don’t worry, I know a pig who teaches
+                    piglets to dance. Let’s go and meet him.”
+                  </div>
+                  <div class="page-footer">7</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 8</h2>
+                  <div
+                    class="page-image"
+                    style="
+                     background-image: url(images/BWLD_09b.jpg);
+                    "
+                  ></div>
+                  <div class="page-footer">8</div>
+                </div>
+              </div>
+
+              <div
+                class="page stf__item --left"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 0px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 9</h2>
+                  <div class="page-text left-page-text">
+                    Willo’s face brightened. Both walked towards the mountain
+                    side to meet the piggy The piggy came out and asked, “What
+                    do you want?” Animo piped up, “Willo here wants to learn
+                    dance from you.”
+                  </div>
+                  <div class="page-footer">9</div>
+                </div>
+              </div>
+
+              <div
+                class="page stf__item --right"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 555px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 10</h2>
+                  <div class="page-text left-page-text">
+                    “That sounds great,” said the pig. And saying that, the pig
+                    broke out into a dance.  Tra… la la la la la  Tra… la la la
+                    la la  Willo tried to move like the pig, but he was unable
+                    to do so.
+                  </div>
+                  <div class="page-footer">10</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --left"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 0px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 11</h2>
+                  <div class="page-text left-page-text">
+                    Willo’s face brightened. Both walked towards the mountain
+                    side to meet the piggy The piggy came out and asked, “What
+                    do you want?” Animo piped up, “Willo here wants to learn
+                    dance from you.”
+                  </div>
+                  <div class="page-footer">11</div>
+                </div>
+              </div>
+
+              <div
+                class="page stf__item --right"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 555px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <h2 class="page-header">Page header - 12</h2>
+                  <div
+                    class="page-image "
+                    style="
+                     background-image: url(images/BWLD_09b.jpg);
+                    "
+                  ></div>
+                  
+                  <div class="page-footer">12</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="canvasBook" style="display: none">
+          <div
+            class="flip-book canvas-book stf__wrapper --portrait"
+            id="canvasBookExample"
+            style="
+              min-width: 350px;
+              min-height: 467px;
+              width: 100%;
+              max-width: 1400px;
+              display: block;
+              padding-bottom: 133.273%;
+            "
+          >
+            <canvas class="stf__canvas" width="100" height="100"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="text-center mt-3 mb-2">
+          <button type="button" class="btn btn-info btn-sm btn-book-prev">
+            Previous page
+          </button>
+          [<span class="page-count">10</span> of
+          <span class="page-total">10</span>]
+          <button type="button" class="btn btn-info btn-sm btn-book-next">
+            Next page
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------BGM------------------------------------>
+
+    <audio id="bgm" controls loop volume="0.1">
+      <source src="audio/Forest Backgrund Music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="voice-audio" controls loop>
+      <source src="audio/01.wav" type="audio/mpeg" />
+    </audio>
+
     <script src="index.js"></script>
-</body>
+    <script src="book.js"></script>
+  </body>
 </html>
