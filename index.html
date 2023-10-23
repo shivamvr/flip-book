@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h2 class="heading">The Bear Story</h2>
+    <!-- <h2 class="heading">The Bear Story</h2> -->
 
     <div class="demo-block bg-light pt-3 pb-3 overflow-hidden">
       <div class="container mb-3 text-center" id="buttonDemoSelection">
-        <div class="btn-group" role="group" aria-label="">
+        <div class="btn-group" style="margin-bottom: 1rem;" role="group" aria-label="">
           <input class="find-box" type="text" placeholder="" />
-          <button type="button" class="btn btn-primary">Find</button>
+          <button id="find-btn" type="button" class="btn btn-primary">Find</button>
         </div>
       </div>
       <div class="container">
@@ -33,10 +33,37 @@
             <div class="stf__block">
               <div class="page stf__item" style="display: none; z-index: 1">
                 <div class="page-content">
+                  <h2 class="page-header">Title Page</h2>
+                  <div class="page-text left-page-text">
+                    <h3 style="margin-top: -3rem; font-weight: 300;">The Bear who wanted to learn Dance</h3>
+                    <iframe width="320" height="160" src="https://www.youtube.com/embed/0Dswj8m_AKM?si=iJA3RMpWJPuBAICb" frameborder="0" allowfullscreen></iframe>
+                    <h4>My YouTube channel-</h4>
+                    <h4 style="margin-top: -2rem;">Raa Raa story time</h4>
+                    <a target="_blank" class="subscirbe" href="https://www.youtube.com/@raaraastorytime/featured">Subscribe</a>
+                    <a href="mailto:Rarastories@gmail.com">Rarastories@gmail.com</a>
+                  </div>
+                  <div class="page-footer">Title page</div>
+                </div>
+              </div>
+
+              <div class="page stf__item" style="display: none; z-index: 1">
+                <div class="page-content">
+                  <h2 class="page-header">Title Page</h2>
+                  <div
+                    class="page-image"
+                    style="background-image: url('./images/title.jpg')"
+                  ></div>
+
+                  <div class="page-footer">Title page</div>
+                </div>
+              </div>
+
+              <div class="page stf__item" style="display: none; z-index: 1">
+                <div class="page-content">
                   <h2 class="page-header">Page header - 1</h2>
                   <div class="page-text left-page-text">
                     Once, there lived a bear named Willo, with a short tail
-                    covered by puffy fur. One day, Willo was sitting all alone
+                    covered by puffy fur. One day, Willo was sitting all alone
                     and not speaking to anyone. His friend, the bird Animo, came
                     flying to him. “Why are you sad, Willo? You are not eating
                     and sleeping properly. Tell me, what’s the problem?”
@@ -44,17 +71,19 @@
                   <div class="page-footer">1</div>
                 </div>
               </div>
+
               <div class="page stf__item" style="display: none; z-index: 1">
                 <div class="page-content">
                   <h2 class="page-header">Page header - 2</h2>
                   <div
                     class="page-image"
-                    style="background-image: url('./images/BWLD_09b.jpg')"
+                    style="background-image: url('./images/img1.png')"
                   ></div>
 
                   <div class="page-footer">2</div>
                 </div>
               </div>
+
               <div class="page stf__item --left --simple" style="display: none">
                 <div class="page-content">
                   <h2 class="page-header">Page header - 3</h2>
@@ -74,9 +103,7 @@
                   <h2 class="page-header">Page header - 4</h2>
                   <div
                     class="page-image"
-                    style="
-                      background-image: url(images/BWLD_09b.jpg);
-                    "
+                    style="background-image: url(images/img2.png)"
                   ></div>
                   <div class="page-footer">4</div>
                 </div>
@@ -118,9 +145,7 @@
                   <h2 class="page-header">Page header - 6</h2>
                   <div
                     class="page-image"
-                    style="
-                     background-image: url(images/BWLD_09b.jpg);
-                    "
+                    style="background-image: url(images/img3.png)"
                   ></div>
                   <div class="page-footer">6</div>
                 </div>
@@ -162,9 +187,7 @@
                   <h2 class="page-header">Page header - 8</h2>
                   <div
                     class="page-image"
-                    style="
-                     background-image: url(images/BWLD_09b.jpg);
-                    "
+                    style="background-image: url(images/img4.png)"
                   ></div>
                   <div class="page-footer">8</div>
                 </div>
@@ -208,16 +231,17 @@
               >
                 <div class="page-content">
                   <h2 class="page-header">Page header - 10</h2>
-                  <div class="page-text left-page-text">
-                    “That sounds great,” said the pig. And saying that, the pig
-                    broke out into a dance.  Tra… la la la la la  Tra… la la la
-                    la la  Willo tried to move like the pig, but he was unable
-                    to do so.
-                  </div>
+                  <div
+                    class="page-image"
+                    style="background-image: url(images/img5.png)"
+                  ></div>
                   <div class="page-footer">10</div>
                 </div>
+
               </div>
-              <div
+              //--------------------------------------------------------------
+
+              <!-- <div
                 class="page stf__item --left"
                 style="
                   position: absolute;
@@ -256,14 +280,14 @@
                 <div class="page-content">
                   <h2 class="page-header">Page header - 12</h2>
                   <div
-                    class="page-image "
-                    style="
-                     background-image: url(images/BWLD_09b.jpg);
-                    "
+                    class="page-image"
+                    style="background-image: url(images/BWLD_09b.jpg)"
                   ></div>
-                  
+
                   <div class="page-footer">12</div>
-                </div>
+                </div> -->
+
+                <!-------------------------------------------------------------------------- -->
               </div>
             </div>
           </div>
@@ -288,16 +312,38 @@
       </div>
 
       <div class="container">
-        <div class="text-center mt-3 mb-2">
-          <button type="button" class="btn btn-info btn-sm btn-book-prev">
+         
+        <div class="text-center controls mt-3 mb-2">
+
+          <button
+            id="prev-btn"
+            type="button"
+            class="btn bluish btn-info btn-sm btn-book-prev"
+          >
             Previous page
           </button>
-          [<span class="page-count">10</span> of
-          <span class="page-total">10</span>]
-          <button type="button" class="btn btn-info btn-sm btn-book-next">
+          <span>
+            <img id="play" class="icon" src="images/play.png" alt="play" />
+            <img
+              id="pause"
+              class="icon display-none"
+              src="images/pause.png"
+              alt="pause"
+            />
+          </span>
+         
+          <button
+            type="button"
+            id="next-btn"
+            class="btn btn-info bluish btn-sm btn-book-next"
+          >
             Next page
           </button>
         </div>
+        <div style="width: fit-content; margin:20px auto;">
+            [<span class="page-count">10</span> of
+            <span class="page-total">10</span>]
+          </div>
       </div>
     </div>
 
@@ -309,7 +355,7 @@
     </audio>
 
     <audio id="voice-audio" controls loop>
-      <source src="audio/01.wav" type="audio/mpeg" />
+      <source src="audio/00.wav" type="audio/mpeg" />
     </audio>
 
     <script src="index.js"></script>

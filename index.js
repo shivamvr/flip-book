@@ -1,4 +1,3 @@
-
 !(function (t) {
 	var e = {};
 	function i(s) {
@@ -23,8 +22,8 @@
 			var s = Object.create(null);
 			if (
 				(i.r(s),
-				Object.defineProperty(s, "default", { enumerable: !0, value: t }),
-				2 & e && "string" != typeof t)
+					Object.defineProperty(s, "default", { enumerable: !0, value: t }),
+					2 & e && "string" != typeof t)
 			)
 				for (var n in t)
 					i.d(
@@ -40,11 +39,11 @@
 			var e =
 				t && t.__esModule
 					? function () {
-							return t.default;
-					  }
+						return t.default;
+					}
 					: function () {
-							return t;
-					  };
+						return t;
+					};
 			return i.d(e, "a", e), e;
 		}),
 		(i.o = function (t, e) {
@@ -56,7 +55,8 @@
 	function (t, e, i) {
 		var s = i(2),
 			n = i(3);
-		"string" == typeof (n = n.__esModule ? n.default : n) && (n = [[t.i, n, ""]]);
+		"string" == typeof (n = n.__esModule ? n.default : n) &&
+			(n = [[t.i, n, ""]]);
 		var o = { insert: "head", singleton: !1 };
 		s(n, o);
 		t.exports = n.locals || {};
@@ -70,7 +70,7 @@
 			n = function () {
 				return (
 					void 0 === s &&
-						(s = Boolean(window && document && document.all && !window.atob)),
+					(s = Boolean(window && document && document.all && !window.atob)),
 					s
 				);
 			},
@@ -79,7 +79,10 @@
 				return function (e) {
 					if (void 0 === t[e]) {
 						var i = document.querySelector(e);
-						if (window.HTMLIFrameElement && i instanceof window.HTMLIFrameElement)
+						if (
+							window.HTMLIFrameElement &&
+							i instanceof window.HTMLIFrameElement
+						)
 							try {
 								i = i.contentDocument.head;
 							} catch (t) {
@@ -126,7 +129,7 @@
 				(Object.keys(s).forEach(function (t) {
 					e.setAttribute(t, s[t]);
 				}),
-				"function" == typeof t.insert)
+					"function" == typeof t.insert)
 			)
 				t.insert(e);
 			else {
@@ -142,15 +145,15 @@
 		var g,
 			c =
 				((g = []),
-				function (t, e) {
-					return (g[t] = e), g.filter(Boolean).join("\n");
-				});
+					function (t, e) {
+						return (g[t] = e), g.filter(Boolean).join("\n");
+					});
 		function d(t, e, i, s) {
 			var n = i
 				? ""
 				: s.media
-				? "@media ".concat(s.media, " {").concat(s.css, "}")
-				: s.css;
+					? "@media ".concat(s.media, " {").concat(s.css, "}")
+					: s.css;
 			if (t.styleSheet) t.styleSheet.cssText = c(e, n);
 			else {
 				var o = document.createTextNode(n),
@@ -165,17 +168,17 @@
 				o = i.sourceMap;
 			if (
 				(n ? t.setAttribute("media", n) : t.removeAttribute("media"),
-				o &&
+					o &&
 					btoa &&
 					(s += "\n/*# sourceMappingURL=data:application/json;base64,".concat(
 						btoa(unescape(encodeURIComponent(JSON.stringify(o)))),
 						" */"
 					)),
-				t.styleSheet)
+					t.styleSheet)
 			)
 				t.styleSheet.cssText = s;
 			else {
-				for (; t.firstChild; ) t.removeChild(t.firstChild);
+				for (; t.firstChild;) t.removeChild(t.firstChild);
 				t.appendChild(document.createTextNode(s));
 			}
 		}
@@ -201,7 +204,11 @@
 				s(t),
 				function (e) {
 					if (e) {
-						if (e.css === t.css && e.media === t.media && e.sourceMap === t.sourceMap)
+						if (
+							e.css === t.css &&
+							e.media === t.media &&
+							e.sourceMap === t.sourceMap
+						)
 							return;
 						s((t = e));
 					} else n();
@@ -215,7 +222,8 @@
 			var i = r((t = t || []), e);
 			return function (t) {
 				if (
-					((t = t || []), "[object Array]" === Object.prototype.toString.call(t))
+					((t = t || []),
+						"[object Array]" === Object.prototype.toString.call(t))
 				) {
 					for (var s = 0; s < i.length; s++) {
 						var n = a(i[s]);
@@ -234,7 +242,7 @@
 		(e = i(4)(!1)).push([
 			t.i,
 			".stf__wrapper {\n  position: relative;\n  display: block;\n  box-sizing: border-box;\n  transform: translateZ(0);\n}\n\n.stf__wrapper canvas {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n\n.stf__block {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n}\n\n.stf__item {\n  display: none;\n  position: absolute;\n}\n\n.stf__outerShadow {\n  position: absolute;\n}\n\n.stf__innerShadow {\n  position: absolute;\n}",
-			""
+			"",
 		]),
 			(t.exports = e);
 	},
@@ -251,14 +259,17 @@
 							if (!s) return i;
 							if (e && "function" == typeof btoa) {
 								var n =
-										((h = s),
+									((h = s),
 										(a = btoa(unescape(encodeURIComponent(JSON.stringify(h))))),
-										(r = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(
-											a
-										)),
+										(r =
+											"sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(
+												a
+											)),
 										"/*# ".concat(r, " */")),
 									o = s.sources.map(function (t) {
-										return "/*# sourceURL=".concat(s.sourceRoot || "").concat(t, " */");
+										return "/*# sourceURL="
+											.concat(s.sourceRoot || "")
+											.concat(t, " */");
 									});
 								return [i].concat(o).concat([n]).join("\n");
 							}
@@ -279,15 +290,18 @@
 					for (var a = 0; a < t.length; a++) {
 						var r = [].concat(t[a]);
 						(s && n[r[0]]) ||
-							(i && (r[2] ? (r[2] = "".concat(i, " and ").concat(r[2])) : (r[2] = i)),
-							e.push(r));
+							(i &&
+								(r[2]
+									? (r[2] = "".concat(i, " and ").concat(r[2]))
+									: (r[2] = i)),
+								e.push(r));
 					}
 				}),
 				e
 			);
 		};
 	},
-	function (t, e, i) {},
+	function (t, e, i) { },
 	function (t, e, i) {
 		"use strict";
 		i.r(e);
@@ -297,7 +311,7 @@
 					angle: 0,
 					area: [],
 					corners: null,
-					position: { x: 0, y: 0 }
+					position: { x: 0, y: 0 },
 				}),
 					(this.render = t);
 			}
@@ -334,7 +348,8 @@
 				t.save(), t.translate(e.x, e.y), t.beginPath();
 				for (let i of this.state.area)
 					null !== i &&
-						((i = this.render.convertToGlobal(i)), t.lineTo(i.x - e.x, i.y - e.y));
+						((i = this.render.convertToGlobal(i)),
+							t.lineTo(i.x - e.x, i.y - e.y));
 				if ((t.rotate(this.state.angle), t.clip(), this.isLoad))
 					t.drawImage(this.image, 0, 0, i, s);
 				else {
@@ -419,11 +434,12 @@
 				t < 0 ||
 					t >= this.pages.length ||
 					(this.app.updatePage(t),
-					"portrait" === this.render.getOrientation()
-						? (this.render.setLeftPage(null), this.render.setRightPage(this.pages[t]))
-						: (t === this.pages.length - 1 && t--,
-						  this.render.setLeftPage(this.pages[t]),
-						  this.render.setRightPage(this.pages[t + 1])));
+						"portrait" === this.render.getOrientation()
+							? (this.render.setLeftPage(null),
+								this.render.setRightPage(this.pages[t]))
+							: (t === this.pages.length - 1 && t--,
+								this.render.setLeftPage(this.pages[t]),
+								this.render.setRightPage(this.pages[t + 1])));
 			}
 		}
 		class h extends o {
@@ -452,23 +468,24 @@
 					n = t[1].x - t[0].x,
 					o = e[1].x - e[0].x;
 				return Math.acos(
-					(i * s + n * o) / (Math.sqrt(i * i + n * n) * Math.sqrt(s * s + o * o))
+					(i * s + n * o) /
+					(Math.sqrt(i * i + n * n) * Math.sqrt(s * s + o * o))
 				);
 			}
 			static PointInRect(t, e) {
 				return null === e
 					? null
 					: e.x >= t.left &&
-					  e.x <= t.width + t.left &&
-					  e.y >= t.top &&
-					  e.y <= t.top + t.height
-					? e
-					: null;
+						e.x <= t.width + t.left &&
+						e.y >= t.top &&
+						e.y <= t.top + t.height
+						? e
+						: null;
 			}
 			static GetRotatedPoint(t, e, i) {
 				return {
 					x: t.x * Math.cos(i) + t.y * Math.sin(i) + e.x,
-					y: t.y * Math.cos(i) - t.x * Math.sin(i) + e.y
+					y: t.y * Math.cos(i) - t.x * Math.sin(i) + e.y,
 				};
 			}
 			static GetIntersectByLineAndCircle(t, e, i) {
@@ -480,7 +497,7 @@
 				let r =
 					Math.sqrt(
 						(Math.pow(e, 2) * Math.pow(s - o, 2)) /
-							(Math.pow(s - o, 2) + Math.pow(n - h, 2))
+						(Math.pow(s - o, 2) + Math.pow(n - h, 2))
 					) + s;
 				i.x < 0 && (r *= -1);
 				let l = ((r - s) * (n - h)) / (s - o) + n;
@@ -545,8 +562,14 @@
 					if (null !== t) {
 						let e =
 							1 === this.render.getDirection()
-								? { x: -t.x + this.state.position.x, y: t.y - this.state.position.y }
-								: { x: t.x - this.state.position.x, y: t.y - this.state.position.y };
+								? {
+									x: -t.x + this.state.position.x,
+									y: t.y - this.state.position.y,
+								}
+								: {
+									x: t.x - this.state.position.x,
+									y: t.y - this.state.position.y,
+								};
 						(e = a.GetRotatedPoint(e, { x: 0, y: 0 }, this.state.angle)),
 							(s += e.x + "px " + e.y + "px, ");
 					}
@@ -567,7 +590,7 @@
 				if (this.element.classList.contains("--simple")) return;
 				null === this.copiedElement &&
 					((this.copiedElement = this.element.cloneNode(!0)),
-					this.element.parentElement.appendChild(this.copiedElement));
+						this.element.parentElement.appendChild(this.copiedElement));
 				const e = this.render.getRect(),
 					i = e.pageWidth,
 					s = e.height,
@@ -591,7 +614,7 @@
 			clearSaved() {
 				this.element.classList.remove("--simple"),
 					null !== this.copiedElement &&
-						(this.copiedElement.remove(), (this.copiedElement = null));
+					(this.copiedElement.remove(), (this.copiedElement = null));
 			}
 			getElement() {
 				return this.element;
@@ -625,102 +648,103 @@
 				try {
 					(this.position = this.preparePosition(t)),
 						this.calculateIntersectPoint(this.position);
-				} catch (t) {}
+				} catch (t) { }
 			}
 			getPageRect(t) {
 				return "top" === this.corner
 					? this.getRectFromBasePoint(
-							[
-								{ x: 0, y: 0 },
-								{ x: this.pageWidth, y: 0 },
-								{ x: 0, y: this.pageHeight },
-								{ x: this.pageWidth, y: this.pageHeight }
-							],
-							t
-					  )
+						[
+							{ x: 0, y: 0 },
+							{ x: this.pageWidth, y: 0 },
+							{ x: 0, y: this.pageHeight },
+							{ x: this.pageWidth, y: this.pageHeight },
+						],
+						t
+					)
 					: this.getRectFromBasePoint(
-							[
-								{ x: 0, y: -this.pageHeight },
-								{ x: this.pageWidth, y: -this.pageHeight },
-								{ x: 0, y: 0 },
-								{ x: this.pageWidth, y: 0 }
-							],
-							t
-					  );
+						[
+							{ x: 0, y: -this.pageHeight },
+							{ x: this.pageWidth, y: -this.pageHeight },
+							{ x: 0, y: 0 },
+							{ x: this.pageWidth, y: 0 },
+						],
+						t
+					);
 			}
 			getRectFromBasePoint(t, e) {
 				return {
 					topLeft: this.getRotatedPoint(t[0], e),
 					topRight: this.getRotatedPoint(t[1], e),
 					bottomLeft: this.getRotatedPoint(t[2], e),
-					bottomRight: this.getRotatedPoint(t[3], e)
+					bottomRight: this.getRotatedPoint(t[3], e),
 				};
 			}
 			getRotatedPoint(t, e) {
 				return {
 					x: t.x * Math.cos(this.angle) + t.y * Math.sin(this.angle) + e.x,
-					y: t.y * Math.cos(this.angle) - t.x * Math.sin(this.angle) + e.y
+					y: t.y * Math.cos(this.angle) - t.x * Math.sin(this.angle) + e.y,
 				};
 			}
 			updateAngleAndGeometry(t) {
-				(this.angle = this.calculateAngle(t)), (this.rect = this.getPageRect(t));
+				(this.angle = this.calculateAngle(t)),
+					(this.rect = this.getPageRect(t));
 			}
 			calculateIntersectPoint(t) {
 				const e = {
 					left: -1,
 					top: -1,
 					width: this.pageWidth + 2,
-					height: this.pageHeight + 2
+					height: this.pageHeight + 2,
 				};
 				"top" === this.corner
 					? ((this.topIntersectPoint = a.GetIntersectByTwoSegment(
-							e,
-							[t, this.rect.topRight],
-							[
-								{ x: 0, y: 0 },
-								{ x: this.pageWidth, y: 0 }
-							]
-					  )),
-					  (this.sideIntersectPoint = a.GetIntersectByTwoSegment(
+						e,
+						[t, this.rect.topRight],
+						[
+							{ x: 0, y: 0 },
+							{ x: this.pageWidth, y: 0 },
+						]
+					)),
+						(this.sideIntersectPoint = a.GetIntersectByTwoSegment(
 							e,
 							[t, this.rect.bottomLeft],
 							[
 								{ x: this.pageWidth, y: 0 },
-								{ x: this.pageWidth, y: this.pageHeight }
+								{ x: this.pageWidth, y: this.pageHeight },
 							]
-					  )),
-					  (this.bottomIntersectPoint = a.GetIntersectByTwoSegment(
+						)),
+						(this.bottomIntersectPoint = a.GetIntersectByTwoSegment(
 							e,
 							[this.rect.bottomLeft, this.rect.bottomRight],
 							[
 								{ x: 0, y: this.pageHeight },
-								{ x: this.pageWidth, y: this.pageHeight }
+								{ x: this.pageWidth, y: this.pageHeight },
 							]
-					  )))
+						)))
 					: ((this.topIntersectPoint = a.GetIntersectByTwoSegment(
-							e,
-							[this.rect.topLeft, this.rect.topRight],
-							[
-								{ x: 0, y: 0 },
-								{ x: this.pageWidth, y: 0 }
-							]
-					  )),
-					  (this.sideIntersectPoint = a.GetIntersectByTwoSegment(
+						e,
+						[this.rect.topLeft, this.rect.topRight],
+						[
+							{ x: 0, y: 0 },
+							{ x: this.pageWidth, y: 0 },
+						]
+					)),
+						(this.sideIntersectPoint = a.GetIntersectByTwoSegment(
 							e,
 							[t, this.rect.topLeft],
 							[
 								{ x: this.pageWidth, y: 0 },
-								{ x: this.pageWidth, y: this.pageHeight }
+								{ x: this.pageWidth, y: this.pageHeight },
 							]
-					  )),
-					  (this.bottomIntersectPoint = a.GetIntersectByTwoSegment(
+						)),
+						(this.bottomIntersectPoint = a.GetIntersectByTwoSegment(
 							e,
 							[this.rect.bottomLeft, this.rect.bottomRight],
 							[
 								{ x: 0, y: this.pageHeight },
-								{ x: this.pageWidth, y: this.pageHeight }
+								{ x: this.pageWidth, y: this.pageHeight },
 							]
-					  )));
+						)));
 			}
 			checkPositionAtCenterLine(t, e, i) {
 				let s = t;
@@ -734,7 +758,7 @@
 				if (
 					("bottom" === this.corner &&
 						((h = this.rect.topRight), (r = this.rect.bottomLeft)),
-					h.x <= 0)
+						h.x <= 0)
 				) {
 					const t = a.GetIntersectByLineAndCircle(i, o, r);
 					t !== s && ((s = t), this.updateAngleAndGeometry(s));
@@ -745,19 +769,19 @@
 				let e = t;
 				if (
 					(this.updateAngleAndGeometry(e),
-					(e =
-						"top" === this.corner
-							? this.checkPositionAtCenterLine(
+						(e =
+							"top" === this.corner
+								? this.checkPositionAtCenterLine(
 									e,
 									{ x: 0, y: 0 },
 									{ x: 0, y: this.pageHeight }
-							  )
-							: this.checkPositionAtCenterLine(
+								)
+								: this.checkPositionAtCenterLine(
 									e,
 									{ x: 0, y: this.pageHeight },
 									{ x: 0, y: 0 }
-							  )),
-					Math.abs(e.x - this.pageWidth) < 1 && Math.abs(e.y) < 1)
+								)),
+						Math.abs(e.x - this.pageWidth) < 1 && Math.abs(e.y) < 1)
 				)
 					throw new Error("Point is too small");
 				return e;
@@ -791,7 +815,7 @@
 				return {
 					top: this.topIntersectPoint,
 					bottom: this.bottomIntersectPoint,
-					side: this.sideIntersectPoint
+					side: this.sideIntersectPoint,
 				};
 			}
 			getSegmentToShadowLine() {
@@ -800,20 +824,20 @@
 					t,
 					t !== this.sideIntersectPoint && null !== this.sideIntersectPoint
 						? this.sideIntersectPoint
-						: this.bottomIntersectPoint
+						: this.bottomIntersectPoint,
 				];
 			}
 			getShadowStartPoint() {
 				return "top" === this.corner
 					? this.topIntersectPoint
 					: null !== this.sideIntersectPoint
-					? this.sideIntersectPoint
-					: this.topIntersectPoint;
+						? this.sideIntersectPoint
+						: this.topIntersectPoint;
 			}
 			getShadowAngle() {
 				const t = a.GetAngleFromTwoLine(this.getSegmentToShadowLine(), [
 					{ x: 0, y: 0 },
-					{ x: this.pageWidth, y: 0 }
+					{ x: this.pageWidth, y: 0 },
 				]);
 				return 0 === this.direction ? t : Math.PI - t;
 			}
@@ -834,7 +858,7 @@
 					null === this.sideIntersectPoint
 						? (e = !0)
 						: (t.push(this.sideIntersectPoint),
-						  null === this.bottomIntersectPoint && (e = !1)),
+							null === this.bottomIntersectPoint && (e = !1)),
 					t.push(this.bottomIntersectPoint),
 					(e || "bottom" === this.corner) && t.push(this.rect.bottomLeft),
 					t
@@ -849,22 +873,25 @@
 					t.push(this.topIntersectPoint),
 					"top" === this.corner
 						? t.push({ x: this.pageWidth, y: 0 })
-						: (null !== this.topIntersectPoint && t.push({ x: this.pageWidth, y: 0 }),
-						  t.push({ x: this.pageWidth, y: this.pageHeight })),
+						: (null !== this.topIntersectPoint &&
+							t.push({ x: this.pageWidth, y: 0 }),
+							t.push({ x: this.pageWidth, y: this.pageHeight })),
 					null !== this.sideIntersectPoint
 						? a.GetDestinationFromTwoPoint(
-								this.sideIntersectPoint,
-								this.topIntersectPoint
-						  ) >= 10 && t.push(this.sideIntersectPoint)
+							this.sideIntersectPoint,
+							this.topIntersectPoint
+						) >= 10 && t.push(this.sideIntersectPoint)
 						: "top" === this.corner &&
-						  t.push({ x: this.pageWidth, y: this.pageHeight }),
+						t.push({ x: this.pageWidth, y: this.pageHeight }),
 					t.push(this.bottomIntersectPoint),
 					t.push(this.topIntersectPoint),
 					t
 				);
 			}
 			getBottomPagePosition() {
-				return 1 === this.direction ? { x: this.pageWidth, y: 0 } : { x: 0, y: 0 };
+				return 1 === this.direction
+					? { x: this.pageWidth, y: 0 }
+					: { x: 0, y: 0 };
 			}
 		}
 		class c {
@@ -895,8 +922,8 @@
 						(this.bottomPage = this.getBottomPage(s)),
 						this.flippingPage && this.bottomPage
 							? (this.render.setDirection(s),
-							  (this.calc = new g(s, n, i.pageWidth, i.height)),
-							  !0)
+								(this.calc = new g(s, n, i.pageWidth, i.height)),
+								!0)
 							: !1
 					);
 				} catch (t) {
@@ -923,9 +950,15 @@
 						const s = 50,
 							n = "bottom" === this.calc.getCorner() ? e.height - 1 : 1,
 							o = "bottom" === this.calc.getCorner() ? e.height - s : s;
-						this.animateFlippingTo({ x: i - 1, y: n }, { x: i - s, y: o }, !1, !1);
+						this.animateFlippingTo(
+							{ x: i - 1, y: n },
+							{ x: i - s, y: o },
+							!1,
+							!1
+						);
 					} else this.do(this.render.convertToPage(t));
-				else this.setState("read"), this.render.finishAnimation(), this.stopMove();
+				else
+					this.setState("read"), this.render.finishAnimation(), this.stopMove();
 			}
 			fold(t) {
 				this.setState("user_fold"),
@@ -933,7 +966,9 @@
 					this.do(this.render.convertToPage(t));
 			}
 			flip(t) {
-				if ((null !== this.calc && this.render.finishAnimation(), !this.start(t)))
+				if (
+					(null !== this.calc && this.render.finishAnimation(), !this.start(t))
+				)
 					return;
 				const e = this.getBoundsRect();
 				this.setState("flipping");
@@ -950,11 +985,14 @@
 			flipNext(t) {
 				this.flip({
 					x: this.render.getRect().left + 2 * this.render.getRect().pageWidth,
-					y: "top" === t ? 1 : this.render.getRect().height - 2
+					y: "top" === t ? 1 : this.render.getRect().height - 2,
 				});
 			}
 			flipPrev(t) {
-				this.flip({ x: 10, y: "top" === t ? 1 : this.render.getRect().height - 2 });
+				this.flip({
+					x: 10,
+					y: "top" === t ? 1 : this.render.getRect().height - 2,
+				});
 			}
 			stopMove() {
 				if (null === this.calc) return;
@@ -968,22 +1006,22 @@
 			do(t) {
 				null !== this.calc &&
 					(this.calc.calc(t),
-					this.flippingPage.setArea(this.calc.getFlippingClipArea()),
-					this.flippingPage.setPosition(this.calc.getActiveCorner()),
-					this.flippingPage.setAngle(this.calc.getAngle()),
-					this.bottomPage.setArea(this.calc.getBottomClipArea()),
-					this.bottomPage.setPosition(this.calc.getBottomPagePosition()),
-					this.bottomPage.setAngle(0),
-					this.render.setPageRect(this.calc.getRect()),
-					this.render.setBottomPage(this.bottomPage),
-					this.render.setFlippingPage(this.flippingPage),
-					this.render.drawShadow(
-						this.calc.getShadowStartPoint(),
-						this.calc.getShadowAngle(),
-						this.calc.getFlippingProgress(),
-						this.calc.getDirection(),
-						this.calc.getShadowLength()
-					));
+						this.flippingPage.setArea(this.calc.getFlippingClipArea()),
+						this.flippingPage.setPosition(this.calc.getActiveCorner()),
+						this.flippingPage.setAngle(this.calc.getAngle()),
+						this.bottomPage.setArea(this.calc.getBottomClipArea()),
+						this.bottomPage.setPosition(this.calc.getBottomPagePosition()),
+						this.bottomPage.setAngle(0),
+						this.render.setPageRect(this.calc.getRect()),
+						this.render.setBottomPage(this.bottomPage),
+						this.render.setFlippingPage(this.flippingPage),
+						this.render.drawShadow(
+							this.calc.getShadowStartPoint(),
+							this.calc.getShadowAngle(),
+							this.calc.getFlippingProgress(),
+							this.calc.getDirection(),
+							this.calc.getShadowLength()
+						));
 			}
 			animateFlippingTo(t, e, i, s = !0) {
 				const n = a.GetCordsFromTwoPoint(t, e),
@@ -996,12 +1034,12 @@
 							(1 === this.calc.getDirection()
 								? this.app.turnToPrevPage()
 								: this.app.turnToNextPage()),
-						s &&
+							s &&
 							(this.render.setBottomPage(null),
-							this.render.setFlippingPage(null),
-							this.render.clearShadow(),
-							(this.state = "read"),
-							this.reset()));
+								this.render.setFlippingPage(null),
+								this.render.clearShadow(),
+								(this.state = "read"),
+								this.reset()));
 				});
 			}
 			getAnimationDuration(t) {
@@ -1015,15 +1053,17 @@
 						? this.app.getPage(e)
 						: this.app.getPage(e - 1)
 					: e < this.app.getPageCount() - 1 && e >= 0
-					? 0 === t
-						? this.app.getPage(e + 2)
-						: this.app.getPage(e - 1)
-					: null;
+						? 0 === t
+							? this.app.getPage(e + 2)
+							: this.app.getPage(e - 1)
+						: null;
 			}
 			getNextPage() {
 				const t = this.app.getCurrentPageIndex(),
 					e = "portrait" === this.render.getOrientation() ? 0 : 2;
-				return t < this.app.getPageCount() - e ? this.app.getPage(t + e + 1) : null;
+				return t < this.app.getPageCount() - e
+					? this.app.getPage(t + e + 1)
+					: null;
 			}
 			getPrevPage() {
 				const t = this.app.getCurrentPageIndex(),
@@ -1039,7 +1079,9 @@
 					: this.app.getCurrentPageIndex() >= 1;
 			}
 			reset() {
-				(this.calc = null), (this.flippingPage = null), (this.bottomPage = null);
+				(this.calc = null),
+					(this.flippingPage = null),
+					(this.bottomPage = null);
 			}
 			getBoundsRect() {
 				return this.render.getRect();
@@ -1083,7 +1125,7 @@
 					width: (((3 * this.getRect().pageWidth) / 4) * i) / 100,
 					opacity: ((100 - i) * o) / 100 / 100,
 					direction: s,
-					length: n
+					length: n,
 				};
 			}
 			clearShadow() {
@@ -1102,13 +1144,14 @@
 						duration: e,
 						durationFrame: e / t.length,
 						onAnimateEnd: i,
-						startedAt: this.timer
+						startedAt: this.timer,
 					});
 			}
 			finishAnimation() {
 				null !== this.animation &&
 					(this.animation.frames[this.animation.frames.length - 1](),
-					null !== this.animation.onAnimateEnd && this.animation.onAnimateEnd()),
+						null !== this.animation.onAnimateEnd &&
+						this.animation.onAnimateEnd()),
 					(this.animation = null);
 			}
 			render(t) {
@@ -1124,7 +1167,8 @@
 			}
 			getRect() {
 				return (
-					null === this.boundsRect && this.calculateBoundsRect(), this.boundsRect
+					null === this.boundsRect && this.calculateBoundsRect(),
+					this.boundsRect
 				);
 			}
 			calculateBoundsRect() {
@@ -1139,23 +1183,26 @@
 				return (
 					"stretch" === this.setting.size
 						? (e < 2 * this.setting.minWidth &&
-								this.app.getSettings().usePortrait &&
-								(t = "portrait"),
-						  (o =
-								"landscape" === t ? this.getBlockWidth() / 2 : this.getBlockWidth()),
-						  o > this.setting.maxWidth && (o = this.setting.maxWidth),
-						  (h = o / n),
-						  h > this.getBlockHeight() && ((h = this.getBlockHeight()), (o = h * n)),
-						  (a = "landscape" === t ? i - o : i - o / 2 - o))
+							this.app.getSettings().usePortrait &&
+							(t = "portrait"),
+							(o =
+								"landscape" === t
+									? this.getBlockWidth() / 2
+									: this.getBlockWidth()),
+							o > this.setting.maxWidth && (o = this.setting.maxWidth),
+							(h = o / n),
+							h > this.getBlockHeight() &&
+							((h = this.getBlockHeight()), (o = h * n)),
+							(a = "landscape" === t ? i - o : i - o / 2 - o))
 						: e < 2 * o &&
-						  this.app.getSettings().usePortrait &&
-						  ((t = "portrait"), (a = i - o / 2 - o)),
+						this.app.getSettings().usePortrait &&
+						((t = "portrait"), (a = i - o / 2 - o)),
 					(this.boundsRect = {
 						left: a,
 						top: s - h / 2,
 						width: 2 * o,
 						height: h,
-						pageWidth: o
+						pageWidth: o,
 					}),
 					t
 				);
@@ -1175,7 +1222,7 @@
 				const i = this.getRect();
 				return {
 					x: 0 === e ? t.x - i.left - i.width / 2 : i.width / 2 - t.x + i.left,
-					y: t.y - i.top
+					y: t.y - i.top,
 				};
 			}
 			convertToGlobal(t, e) {
@@ -1183,7 +1230,7 @@
 				const i = this.getRect();
 				return {
 					x: 0 === e ? t.x + i.left + i.width / 2 : i.width / 2 - t.x + i.left,
-					y: t.y + i.top
+					y: t.y + i.top,
 				};
 			}
 			convertRectToGlobal(t, e) {
@@ -1193,7 +1240,7 @@
 						topLeft: this.convertToGlobal(t.topLeft, e),
 						topRight: this.convertToGlobal(t.topRight, e),
 						bottomLeft: this.convertToGlobal(t.bottomLeft, e),
-						bottomRight: this.convertToGlobal(t.bottomRight, e)
+						bottomRight: this.convertToGlobal(t.bottomRight, e),
 					}
 				);
 			}
@@ -1242,18 +1289,19 @@
 			drawFrame(t) {
 				this.clear(),
 					"portrait" !== this.orientation &&
-						null != this.leftPage &&
-						this.leftPage.simpleDraw(0),
+					null != this.leftPage &&
+					this.leftPage.simpleDraw(0),
 					null != this.rightPage && this.rightPage.simpleDraw(1),
 					null != this.bottomPage && this.bottomPage.draw(),
 					this.drawBookShadow(),
 					null != this.flippingPage && this.flippingPage.draw(),
-					null != this.shadow && (this.drawOuterShadow(), this.drawInnerShadow());
+					null != this.shadow &&
+					(this.drawOuterShadow(), this.drawInnerShadow());
 				const e = this.getRect();
 				"portrait" === this.orientation &&
 					(this.ctx.beginPath(),
-					this.ctx.rect(e.left + e.pageWidth, e.top, e.width, e.height),
-					this.ctx.clip());
+						this.ctx.rect(e.left + e.pageWidth, e.top, e.width, e.height),
+						this.ctx.clip());
 			}
 			drawBookShadow() {
 				const t = this.getRect();
@@ -1281,18 +1329,18 @@
 					this.ctx.rect(t.left, t.top, t.width, t.height);
 				const e = this.convertToGlobal({
 					x: this.shadow.pos.x,
-					y: this.shadow.pos.y
+					y: this.shadow.pos.y,
 				});
 				this.ctx.translate(e.x, e.y),
 					this.ctx.rotate(Math.PI + this.shadow.angle + Math.PI / 2);
 				const i = this.ctx.createLinearGradient(0, 0, this.shadow.width, 0);
 				0 === this.shadow.direction
 					? (this.ctx.translate(0, -100),
-					  i.addColorStop(0, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
-					  i.addColorStop(1, "rgba(0, 0, 0, 0)"))
+						i.addColorStop(0, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
+						i.addColorStop(1, "rgba(0, 0, 0, 0)"))
 					: (this.ctx.translate(-this.shadow.width, -100),
-					  i.addColorStop(0, "rgba(0, 0, 0, 0)"),
-					  i.addColorStop(1, "rgba(0, 0, 0, " + this.shadow.opacity + ")")),
+						i.addColorStop(0, "rgba(0, 0, 0, 0)"),
+						i.addColorStop(1, "rgba(0, 0, 0, " + this.shadow.opacity + ")")),
 					this.ctx.clip(),
 					(this.ctx.fillStyle = i),
 					this.ctx.fillRect(0, 0, this.shadow.width, 2 * t.height),
@@ -1302,9 +1350,9 @@
 				const t = this.getRect();
 				this.ctx.save(), this.ctx.beginPath();
 				const e = this.convertToGlobal({
-						x: this.shadow.pos.x,
-						y: this.shadow.pos.y
-					}),
+					x: this.shadow.pos.x,
+					y: this.shadow.pos.y,
+				}),
 					i = this.convertRectToGlobal(this.pageRect);
 				this.ctx.moveTo(i.topLeft.x, i.topLeft.y),
 					this.ctx.lineTo(i.topRight.x, i.topRight.y),
@@ -1316,15 +1364,15 @@
 					n = this.ctx.createLinearGradient(0, 0, s, 0);
 				0 === this.shadow.direction
 					? (this.ctx.translate(-s, -100),
-					  n.addColorStop(1, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
-					  n.addColorStop(0.9, "rgba(0, 0, 0, 0.05)"),
-					  n.addColorStop(0.7, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
-					  n.addColorStop(0, "rgba(0, 0, 0, 0)"))
+						n.addColorStop(1, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
+						n.addColorStop(0.9, "rgba(0, 0, 0, 0.05)"),
+						n.addColorStop(0.7, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
+						n.addColorStop(0, "rgba(0, 0, 0, 0)"))
 					: (this.ctx.translate(0, -100),
-					  n.addColorStop(0, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
-					  n.addColorStop(0.1, "rgba(0, 0, 0, 0.05)"),
-					  n.addColorStop(0.3, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
-					  n.addColorStop(1, "rgba(0, 0, 0, 0)")),
+						n.addColorStop(0, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
+						n.addColorStop(0.1, "rgba(0, 0, 0, 0.05)"),
+						n.addColorStop(0.3, "rgba(0, 0, 0, " + this.shadow.opacity + ")"),
+						n.addColorStop(1, "rgba(0, 0, 0, 0)")),
 					this.ctx.clip(),
 					(this.ctx.fillStyle = n),
 					this.ctx.fillRect(0, 0, s, 2 * t.height),
@@ -1347,10 +1395,10 @@
 				(this.wrapper.style.minWidth = i.minWidth * s + "px"),
 					(this.wrapper.style.minHeight = i.minHeight * s + "px"),
 					"fixed" === i.size &&
-						((this.wrapper.style.minWidth = i.width * s + "px"),
+					((this.wrapper.style.minWidth = i.width * s + "px"),
 						(this.wrapper.style.minHeight = i.height * s + "px")),
 					i.autoSize &&
-						((this.wrapper.style.width = "100%"),
+					((this.wrapper.style.width = "100%"),
 						(this.wrapper.style.maxWidth = 2 * i.maxWidth + "px")),
 					(this.wrapper.style.display = "block");
 			}
@@ -1364,16 +1412,19 @@
 				this.wrapper.classList.remove("--portrait", "--landscape"),
 					"portrait" === t
 						? (this.app.getSettings().autoSize &&
-								(this.wrapper.style.paddingBottom =
-									(this.app.getSettings().height / this.app.getSettings().width) * 100 +
-									"%"),
-						  this.wrapper.classList.add("--portrait"))
+							(this.wrapper.style.paddingBottom =
+								(this.app.getSettings().height /
+									this.app.getSettings().width) *
+								100 +
+								"%"),
+							this.wrapper.classList.add("--portrait"))
 						: (this.app.getSettings().autoSize &&
-								(this.wrapper.style.paddingBottom =
-									(this.app.getSettings().height / (2 * this.app.getSettings().width)) *
-										100 +
-									"%"),
-						  this.wrapper.classList.add("--landscape")),
+							(this.wrapper.style.paddingBottom =
+								(this.app.getSettings().height /
+									(2 * this.app.getSettings().width)) *
+								100 +
+								"%"),
+							this.wrapper.classList.add("--landscape")),
 					this.update();
 			}
 			setHandlers() {
@@ -1419,16 +1470,18 @@
 									Date.now() - this.touchPoint.time < this.swipeTimeout &&
 									(t > 0
 										? this.app.flipPrev(
-												this.touchPoint.point.y < this.app.getRender().getRect().height / 2
-													? "top"
-													: "bottom"
-										  )
+											this.touchPoint.point.y <
+												this.app.getRender().getRect().height / 2
+												? "top"
+												: "bottom"
+										)
 										: this.app.flipNext(
-												this.touchPoint.point.y < this.app.getRender().getRect().height / 2
-													? "top"
-													: "bottom"
-										  ),
-									(s = !0)),
+											this.touchPoint.point.y <
+												this.app.getRender().getRect().height / 2
+												? "top"
+												: "bottom"
+										),
+										(s = !0)),
 									(this.touchPoint = null);
 							}
 							this.app.userStop(i, s);
@@ -1512,22 +1565,24 @@
 			drawShadow(t, e, i, s, n) {
 				super.drawShadow(t, e, i, s, n),
 					null === this.outerShadow &&
-						(this.element.insertAdjacentHTML(
-							"beforeend",
-							'<div class="stf__outerShadow"></div>'
-						),
-						(this.outerShadow = this.element.querySelector(".stf__outerShadow")),
+					(this.element.insertAdjacentHTML(
+						"beforeend",
+						'<div class="stf__outerShadow"></div>'
+					),
+						(this.outerShadow =
+							this.element.querySelector(".stf__outerShadow")),
 						(this.outerShadow.style.zIndex = (
 							this.getSettings().startZIndex + 10
 						).toString(10)),
 						(this.outerShadow.style.left = "0px"),
 						(this.outerShadow.style.top = "0px")),
 					null === this.innerShadow &&
-						(this.element.insertAdjacentHTML(
-							"beforeend",
-							'<div class="stf__innerShadow"></div>'
-						),
-						(this.innerShadow = this.element.querySelector(".stf__innerShadow")),
+					(this.element.insertAdjacentHTML(
+						"beforeend",
+						'<div class="stf__innerShadow"></div>'
+					),
+						(this.innerShadow =
+							this.element.querySelector(".stf__innerShadow")),
 						(this.innerShadow.style.zIndex = (
 							this.getSettings().startZIndex + 10
 						).toString(10)),
@@ -1564,7 +1619,7 @@
 					this.pageRect.topLeft,
 					this.pageRect.topRight,
 					this.pageRect.bottomRight,
-					this.pageRect.bottomLeft
+					this.pageRect.bottomLeft,
 				];
 				let r = "polygon( ";
 				for (const t of h) {
@@ -1582,7 +1637,10 @@
 			}
 			drawOuterShadow() {
 				const t = this.getRect(),
-					e = this.convertToGlobal({ x: this.shadow.pos.x, y: this.shadow.pos.y }),
+					e = this.convertToGlobal({
+						x: this.shadow.pos.x,
+						y: this.shadow.pos.y,
+					}),
 					i = this.shadow.angle + (3 * Math.PI) / 2,
 					s = 1 === this.getDirection() ? this.shadow.width : 0,
 					n = 0 === this.getDirection() ? "to right" : "to left";
@@ -1632,17 +1690,18 @@
 						: null != this.leftPage && this.leftPage.clearSaved(),
 					null != this.rightPage && this.rightPage.simpleDraw(1),
 					null != this.bottomPage &&
-						(("portrait" === this.orientation && 1 === this.direction) ||
-							((this.bottomPage.getElement().style.zIndex = (
-								this.getSettings().startZIndex + 3
-							).toString(10)),
+					(("portrait" === this.orientation && 1 === this.direction) ||
+						((this.bottomPage.getElement().style.zIndex = (
+							this.getSettings().startZIndex + 3
+						).toString(10)),
 							this.bottomPage.draw())),
 					null != this.flippingPage &&
-						((this.flippingPage.getElement().style.zIndex = (
-							this.getSettings().startZIndex + 4
-						).toString(10)),
+					((this.flippingPage.getElement().style.zIndex = (
+						this.getSettings().startZIndex + 4
+					).toString(10)),
 						this.flippingPage.draw()),
-					null != this.shadow && (this.drawOuterShadow(), this.drawInnerShadow());
+					null != this.shadow &&
+					(this.drawOuterShadow(), this.drawInnerShadow());
 			}
 			clear() {
 				const t = [];
@@ -1653,8 +1712,10 @@
 				for (const e of this.items)
 					t.includes(e) ||
 						((e.style.display = "none"),
-						(e.style.zIndex = (this.getSettings().startZIndex + 1).toString(10)),
-						(e.style.transform = ""));
+							(e.style.zIndex = (this.getSettings().startZIndex + 1).toString(
+								10
+							)),
+							(e.style.transform = ""));
 			}
 			clearClass(t) {
 				null !== t && t.getElement().classList.remove("--left", "--right");
@@ -1662,36 +1723,40 @@
 			setRightPage(t) {
 				this.clearClass(this.rightPage),
 					null !== this.rightPage &&
-						t !== this.rightPage &&
-						this.rightPage.clearSaved(),
+					t !== this.rightPage &&
+					this.rightPage.clearSaved(),
 					null !== t && t.getElement().classList.add("--right"),
 					super.setRightPage(t);
 			}
 			setLeftPage(t) {
 				this.clearClass(this.leftPage),
 					null !== this.leftPage &&
-						t !== this.rightPage &&
-						this.leftPage.clearSaved(),
+					t !== this.rightPage &&
+					this.leftPage.clearSaved(),
 					null !== t && t.getElement().classList.add("--left"),
 					super.setLeftPage(t);
 			}
 			setBottomPage(t) {
 				null !== t &&
-					t.getElement().classList.add(1 === this.direction ? "--left" : "--right"),
+					t
+						.getElement()
+						.classList.add(1 === this.direction ? "--left" : "--right"),
 					super.setBottomPage(t);
 			}
 			setFlippingPage(t) {
 				null !== t &&
-					t.getElement().classList.add(1 === this.direction ? "--right" : "--left"),
+					t
+						.getElement()
+						.classList.add(1 === this.direction ? "--right" : "--left"),
 					super.setFlippingPage(t);
 			}
 			update() {
 				super.update(),
 					null !== this.rightPage &&
-						(this.rightPage.getElement().classList.add("--right"),
+					(this.rightPage.getElement().classList.add("--right"),
 						this.rightPage.clearSaved()),
 					null !== this.leftPage &&
-						(this.leftPage.getElement().classList.add("--left"),
+					(this.leftPage.getElement().classList.add("--left"),
 						this.leftPage.clearSaved());
 			}
 		}
@@ -1730,7 +1795,7 @@
 					usePortrait: !0,
 					startZIndex: 0,
 					autoSize: !0,
-					maxShadowOpacity: 1
+					maxShadowOpacity: 1,
 				}),
 				t
 			);
@@ -1742,7 +1807,8 @@
 			}
 			on(t, e) {
 				return (
-					t in this.events ? this.events[t].push(e) : (this.events[t] = [e]), this
+					t in this.events ? this.events[t].push(e) : (this.events[t] = [e]),
+					this
 				);
 			}
 			off(t) {
@@ -1764,8 +1830,9 @@
 					(this.setting = null);
 				try {
 					(this.setting = x.GetSettings(e)), (this.block = t);
-				} catch (t) {}
+				} catch (t) { }
 			}
+
 			update() {
 				this.render.update(), this.pages.show(this.currentPage);
 			}
@@ -1802,7 +1869,12 @@
 			}
 			loadFromHTML(t) {
 				(this.ui = new m(this.block, this, this.setting, t)),
-					(this.render = new y(this, this.setting, this.ui.getDistElement(), t)),
+					(this.render = new y(
+						this,
+						this.setting,
+						this.ui.getDistElement(),
+						t
+					)),
 					(this.flip = new c(this.render, this)),
 					(this.pages = new l(this, this.render, this.ui.getDistElement(), t)),
 					this.pages.load(),
@@ -1854,19 +1926,21 @@
 				return this.ui;
 			}
 			startUserTouch(t) {
-				(this.mousePosition = t), (this.isUserTouch = !0), (this.isUserMove = !1);
+				(this.mousePosition = t),
+					(this.isUserTouch = !0),
+					(this.isUserMove = !1);
 			}
 			userMove(t, e) {
 				this.isUserTouch || e
 					? this.isUserTouch &&
-					  a.GetDestinationFromTwoPoint(this.mousePosition, t) > 5 &&
-					  ((this.isUserMove = !0), this.flip.fold(t))
+					a.GetDestinationFromTwoPoint(this.mousePosition, t) > 5 &&
+					((this.isUserMove = !0), this.flip.fold(t))
 					: this.flip.showCorner(t);
 			}
 			userStop(t, e = !1) {
 				this.isUserTouch &&
 					((this.isUserTouch = !1),
-					e || (this.isUserMove ? this.flip.stopMove() : this.flip.flip(t)));
+						e || (this.isUserMove ? this.flip.stopMove() : this.flip.flip(t)));
 			}
 			checkPage(t) {
 				return t >= 0 && t < this.pages.getPageCount();
@@ -1875,45 +1949,41 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			const t = new w(document.getElementById("canvasBookExample"), {
 				width: 550,
-				height: 733,
+				height: 580,
 				size: "stretch",
 				minWidth: 350,
 				maxWidth: 700,
 				minHeight: 467,
-				maxHeight: 933
+				maxHeight: 933,
 			});
 			t.loadFromImages([
-				"https://cdn.pixabay.com/photo/2015/05/03/14/40/woman-751236__340.jpg",
-				"https://cdn.pixabay.com/photo/2015/03/04/12/59/bells-flower-658751__340.jpg",
-				"https://cdn.pixabay.com/photo/2014/04/10/11/27/flower-320874__340.jpg",
-				"https://cdn.pixabay.com/photo/2017/04/12/23/23/wild-flower-2226095__340.jpg",
-				"https://cdn.pixabay.com/photo/2015/05/15/14/47/woman-768702__340.jpg",
-				"https://cdn.pixabay.com/photo/2015/02/23/20/49/flowers-646637__340.jpg",
-				"https://cdn.pixabay.com/photo/2016/07/12/17/30/flower-1512646__340.jpg",
-				"https://cdn.pixabay.com/photo/2020/03/10/15/54/dandelion-4919334__340.jpg",
-				"https://cdn.pixabay.com/photo/2020/04/29/16/10/vase-5109481__340.jpg",
-				"https://cdn.pixabay.com/photo/2014/02/10/00/32/rose-263234__340.jpg",
-				"https://cdn.pixabay.com/photo/2020/03/10/15/54/dandelion-4919334__340.jpg",
-				"https://cdn.pixabay.com/photo/2016/03/09/09/30/flowers-1245828__340.jpg",
-				"https://cdn.pixabay.com/photo/2012/03/03/23/59/flowers-21708__340.jpg",
-				"https://cdn.pixabay.com/photo/2015/01/07/10/24/aster-591311__340.jpg"
+				"images/BWLD_09b.jpg",
+				"images/BWLD_09b.jpg",
+				"images/BWLD_09b.jpg",
+				"images/BWLD_09b.jpg",
+				"images/BWLD_09b.jpg",
+				"images/BWLD_09b.jpg",
 			]);
 			const e = new w(document.getElementById("htmlBookExample"), {
-					width: 550,
-					height: 733,
-					size: "stretch",
-					minWidth: 350,
-					maxWidth: 700,
-					minHeight: 467,
-					maxHeight: 933,
-					autoSize: !0,
-					maxShadowOpacity: 0.5
-				}),
+				width: 550,
+				height: 580,
+				size: "stretch",
+				minWidth: 350,
+				maxWidth: 700,
+				minHeight: 467,
+				maxHeight: 933,
+				autoSize: !0,
+				maxShadowOpacity: 0.5,
+			}),
 				i = document.getElementById("htmlBook"),
 				s = document.getElementById("canvasBook"),
 				n = document.getElementById("buttonDemoSelection"),
 				o = n.querySelectorAll("button");
 			let h = e;
+			console.log("h", h);
+			document.querySelector("#find-btn").addEventListener("click", () => {
+				e.turnToNextPage()
+			});
 			for (const a of o)
 				a.addEventListener("click", (o) => {
 					const a = n.querySelector(".btn-primary");
@@ -1922,44 +1992,44 @@
 					r.classList.add("btn-primary"), r.classList.remove("btn-secondary");
 					"html" === r.dataset.dest
 						? ((h = e),
-						  (s.style.display = "none"),
-						  (i.style.display = "block"),
-						  e.getUI().update(),
-						  e.update())
+							(s.style.display = "none"),
+							(i.style.display = "block"),
+							e.getUI().update(),
+							e.update())
 						: ((h = t),
-						  (s.style.display = "block"),
-						  (i.style.display = "none"),
-						  t.getUI().update(),
-						  t.update());
+							(s.style.display = "block"),
+							(i.style.display = "none"),
+							t.getUI().update(),
+							t.update());
 				});
 			document.querySelector(".btn-book-next").addEventListener("click", () => {
 				h.flipNext();
 			}),
-				document.querySelector(".btn-book-prev").addEventListener("click", () => {
-					h.flipPrev();
-				}),
+			// document.querySelector("#find-btn").addEventListener("click", () => {
+			// 	h.turnToNextPage()
+			// });
+				document
+					.querySelector(".btn-book-prev")
+					.addEventListener("click", () => {
+						h.flipPrev();
+					}),
 				t.on("flip", (e) => {
 					const i = parseInt(e.data.toString(), 10) + 1;
 					(document.querySelector(".page-count").innerHTML = i.toString(10)),
-						(document.querySelector(
-							".page-total"
-						).innerHTML = t.getPageCount().toString(10));
+						(document.querySelector(".page-total").innerHTML = t
+							.getPageCount()
+							.toString(10));
 				}),
 				e.on("flip", (t) => {
 					const i = parseInt(t.data.toString(), 10) + 1;
 					(document.querySelector(".page-count").innerHTML = i.toString(10)),
-						(document.querySelector(
-							".page-total"
-						).innerHTML = e.getPageCount().toString(10));
+						(document.querySelector(".page-total").innerHTML = e
+							.getPageCount()
+							.toString(10));
 				}),
 				e.loadFromHTML(document.querySelectorAll(".page"));
 		});
-	}
+	},
 ]);
 
-
-
-
-
-
-
+console.log("window", window);
